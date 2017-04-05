@@ -13,7 +13,7 @@ username.addEventListener('keypress', function(evt) {
     this.style.display = "none";
     chatcontainer.style.display = "block";
 
-    conn = new Connection(name, "chatwindow", "127.0.0.1:3000");
+    conn = new Connection(name, "chatwindow", "ws://127.0.0.1:3000");
 });
 
 messagebox.addEventListener('keypress', function(evt) {
